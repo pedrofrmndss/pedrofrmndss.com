@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A propos</title>
+  <link rel="shortcut icon" href="images/logo2.svg" type="image/svg">
+  <link rel="stylesheet" href="styleapropos.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo"><img src="images/logo2.svg" alt="logo"></a>
+    <nav>
+        <a href="menu.html">MENU</a>
+        <a href="localisation.html">LOCALISATION</a>
+        <a href="apropos.html">A PROPOS</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+  <section class="prinpale">
+    <div class="premiertexte">
+        <h1 id="titre">A propos de Nous</h1>
+        <h3 id="sous_titre">Notre histoire et ce que nous proposons !</h3>
+    </div>
+    <div class="images">
+        <button onclick="setLanguage('pt')"> <img src="images/gifportugal.gif" alt="drapeau_portugal"></button>
+        <button onclick="setLanguage('fr')"> <img src="images/giffrance.gif" alt="drapeau_france"></button>
+        <button onclick="setLanguage('en')"> <img src="images/gifangleterre.gif" alt="drapeau_uk"></button>
+    </div>
+    <div class="texteapropos">
+        <p id="paragraphe1"> 
+            Cafe Lisboa est née en 2022 quand nous avons réalisé qu’il n’y avait pas de
+            restaurants proposant de la nourriture portugaise sur la rive droite de Rouen
+            et décidé de résoudre ce problème.
+        </p>
+        <br>
+        <p id="paragraphe2">
+            C’est pourquoi nous avons installé notre food truck près de la cathédrale pour 
+            partager des saveurs et des plats authentiques à tous les Rouennais.
+            Vous faire traval avec des recettes préparées avec passion et générosité.
+            Si vous cherchez une expérience authentique, une pause qui vous emmène
+             directement au Portugal, venez nous voir.
+        </p>
+        <br>
+        <p id="paragraphe3">
+            Quand vous pensez à la cuisine portugaise, vous pouvez penser au poisson 
+            ou aux fameux pasteis de nata, venez découvrir ici toutes les recettes que 
+            vous n’imaginez pas exister.
+            Ici, nous vous proposons des plats, collations et pâtisseries qui sauront
+             surpasser vos attentes. 
+        </p>
+    </div>
+  </section>
+  <script>
+    function setLanguage(lang) {
+        const texts = {
+            fr: {
+                titre: "A propos de Nous",
+                sous_titre: "Notre histoire et ce que nous proposons !",
+                paragraphe1: "Cafe Lisboa est née en 2022 quand nous avons réalisé qu’il n’y avait pas de restaurants proposant de la nourriture portugaise sur la rive droite de Rouen et décidé de résoudre ce problème.",
+                paragraphe2: "C’est pourquoi nous avons installé notre food truck près de la cathédrale pour partager des saveurs et des plats authentiques à tous les Rouennais. Vous faire voyager avec des recettes préparées avec passion et générosité. Si vous cherchez une expérience authentique, une pause qui vous emmène directement au Portugal, venez nous voir.",
+                paragraphe3: "Quand vous pensez à la cuisine portugaise, vous pouvez penser au poisson ou aux fameux pasteis de nata, venez découvrir ici toutes les recettes que vous n’imaginez pas exister. Ici, nous vous proposons des plats, collations et pâtisseries qui sauront surpasser vos attentes."
+            },
+            pt: {
+                titre: "Sobre Nós",
+                sous_titre: "Nossa história e o que oferecemos!",
+                paragraphe1: "A Cafe Lisboa nasceu em 2022, quando percebemos que não havia restaurantes que oferecessem comida portuguesa na margem direita de Rouen e decidimos resolver esse problema.",
+                paragraphe2: "Por isso, instalamos nosso food truck perto da catedral para compartilhar sabores e pratos autênticos com todos os rouennais. Viaje com receitas preparadas com paixão e generosidade. Se você procura uma experiência autêntica, uma pausa que o leva diretamente a Portugal, venha nos visitar.",
+                paragraphe3: "Quando você pensa na culinária portuguesa, pode pensar no peixe ou nos famosos pastéis de nata, venha descobrir aqui todas as receitas que você nem imagina que existem. Aqui, oferecemos pratos, lanches e doces que superarão suas expectativas."
+            },
+            en: {
+                titre: "About Us",
+                sous_titre: "Our history and what we offer!",
+                paragraphe1: "Cafe Lisboa was born in 2022 when we realized there were no restaurants offering Portuguese food on the right bank of Rouen and decided to solve that problem.",
+                paragraphe2: "That's why we set up our food truck near the cathedral to share authentic flavors and dishes with all Rouen locals. Taking you on a journey with recipes prepared with passion and generosity. If you're looking for an authentic experience, a break that takes you directly to Portugal, come and visit us.",
+                paragraphe3: "When you think of Portuguese cuisine, you might think of fish or the famous pastéis de nata, come discover all the recipes you didn't even know existed. Here, we offer dishes, snacks, and pastries that will exceed your expectations."
+            }
+        }
+        document.getElementById('titre').innerText = texts[lang].titre;
+        document.getElementById('sous_titre').innerText = texts[lang].sous_titre;
+        document.getElementById('paragraphe1').innerText = texts[lang].paragraphe1;
+        document.getElementById('paragraphe2').innerText = texts[lang].paragraphe2;
+        document.getElementById('paragraphe3').innerText = texts[lang].paragraphe3;
+    }
+  </script>
+  <footer>
+    <div class="container">
+        <a href="menu.html">Menu</a>
+            <a href="localisation.html">Localisation</a>
+            <a href="apropos.html">A propos</a>
+            <a href="contact.html">Contact</a>
+            <p> Restaurant & Food Truck : Cafe Lisboa  |   Crédit: Firmino Pedro   | 2024</p>
+    </div>
+</footer>
+</body>
+</html>

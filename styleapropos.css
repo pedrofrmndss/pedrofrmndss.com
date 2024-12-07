@@ -1,0 +1,107 @@
+html{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#340002;
+    background: url("images/azulejosfond3.jpg");
+    color:white;
+}
+header{
+    position: fixed;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    width: 88%;
+    padding: 20px 10%;
+    background-color: #013517;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    overflow-x: hidden;
+}
+.logo img{
+    height: 65px;
+    width: 65px;
+    object-fit: contain;
+}
+
+nav a{
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+nav a:hover{
+    color:#8B0000;
+    font-size: 18pt
+}
+section{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0 10%;
+}
+.premiertexte{
+    text-align: center;
+    max-width:600px;
+}
+.premiertexte h1{
+    font-size:55px;
+}
+.premiertexte h3{
+    font-size: 30px;
+    color:#d4af37;
+}
+.premiertexte p{
+    font-size: 15px;
+}
+.images{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    max-height: 50px;;
+    margin:30px 0;
+}  
+    
+.images img{
+    max-height: 50px;;
+    margin:30px 0;
+}  
+.texteapropos{
+    max-width: 800px;
+    text-align: center;
+    margin-top: 20px;
+} 
+button{
+    background-color: transparent;
+    border: none;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    background-color:rgb(5, 34, 5);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+footer a {
+    color: white;
+    font-size: 14px;
+    justify-content: space-between ;
+    margin-right: 50px;
+    margin-left: 50px;
+    align-items: center;
+}
+
+footer p {
+    font-size: 14px;
+}
